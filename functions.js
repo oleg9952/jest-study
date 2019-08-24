@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 const functions = {
     add: (num1, num2) => num1 + num2,
     isNull: () => null,
@@ -7,24 +9,18 @@ const functions = {
         user['lastName'] = 'Traversy';
         return user
     },
-    fetchUsers: () => {
-        let usersArray = [];
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://api.github.com/users', true);
-        xhr.onload() = function() {
-            if(this.status == 200) {
-                let users = JSON.parse(this.responseText);
-                users.forEach(item => {
-                    usersArray.push(item.login);
-                })
-                console.log(usersArray);
-            }
-        }
-        xhr.send();
+    reverseString: str => {
+        let reversedStr = str.toLowerCase().split('').reverse().join('');
+        return reversedStr;
+    },
+    fetchUsers: (x) => {
+        axios.get('https://api.github.com/users')
+            .then(response => {
+                return response.data[x - 1].login
+            })
+            .catch(error => console.log('Error!'))
     }
 }
-
-functions.fetchUsers();
 
 module.exports = functions;
 

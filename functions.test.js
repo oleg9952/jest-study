@@ -55,3 +55,13 @@ test('admin should be in username', () => {
     usernames = ['jogn', 'alex', 'admin', 'robert'];
     expect(usernames).toContain('admin');
 })
+
+// Reverse string
+test('reverse string', () => {
+    expect(functions.reverseString('John')).toEqual('nhoj');
+})
+
+// Fetch users with AXIOS || ASYNC data
+test('User login should match Mojombo', () => {
+    expect(functions.fetchUsers()).toBeDefined()
+})
