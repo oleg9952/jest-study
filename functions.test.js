@@ -50,3 +50,8 @@ test('There is no I in team', () => {
 })
 
 
+// Arrays
+test('admin should be in username', () => {
+    usernames = ['jogn', 'alex', 'admin', 'robert'];
+    expect(usernames).toContain('admin');
+})
