@@ -63,5 +63,6 @@ test('reverse string', () => {
 
 // Fetch users with AXIOS || ASYNC data
 test('User login should match Mojombo', () => {
-    expect(functions.fetchUsers()).toBeDefined()
+    expect.assertions(1);
+    expect(functions.fetchUsers(1)).toEqual('toBeDefined');
 })

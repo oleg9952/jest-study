@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "logStatus": false
+    },
+    {
+        "id": 2,
+        "name": "Ervin Howell",
+        "logStatus": false
+    },
+    {
+        "id": 3,
+        "name": "Clementine Bauch",
+        "logStatus": true
+    },
+    {
+        "id": 4,
+        "name": "Patricia Lebsack",
+        "logStatus": false
+    },
+    {
+        "id": 5,
+        "name": "Chelsey Dietrich",
+        "logStatus": true
+    },
+    {
+        "id": 6,
+        "name": "Mrs. Dennis Schulist",
+        "logStatus": false
+    },
+    {
+        "id": 7,
+        "name": "Kurtis Weissnat",
+        "logStatus": true
+    },
+    {
+        "id": 8,
+        "name": "Nicholas Runolfsdottir V",
+        "logStatus": false
+    },
+    {
+        "id": 9,
+        "name": "Glenna Reichert",
+        "logStatus": false
+    },
+    {
+        "id": 10,
+        "name": "Clementina DuBuque",
+        "logStatus": true
+    }
+]

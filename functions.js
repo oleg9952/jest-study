@@ -19,8 +19,31 @@ const functions = {
                 return response.data[x - 1].login
             })
             .catch(error => console.log('Error!'))
+    },
+    readUsers: () => {
+        // let xhr = new XMLHttpRequest();
+        // xhr.open('GET', './Users.json');
+        // xhr.onload = function () {
+        //     if(this.status == 200) {
+        //         let data = JSON.parse(this.responseText);
+        //         data.forEach(item => {
+        //             console.log(item.name)
+        //         })
+        //     }
+        // }
+        // xhr.send();
+        
+        axios.get('./Users.json')
+            .then(resp => {
+                resp.data.forEach(item => {
+                    console.log(item.name);
+                })
+            })
+            .catch(error => 'Error!')
     }
 }
+
+functions.readUsers();
 
 module.exports = functions;
 
